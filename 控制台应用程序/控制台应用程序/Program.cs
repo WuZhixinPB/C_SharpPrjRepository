@@ -12,6 +12,8 @@ namespace 控制台应用程序
         {
             Console.WriteLine("hello world!!");
             Console.ReadLine();
+            Console.WriteLine("请输入以下计算的结果,按回车结束");
+            Console.ReadKey();
         }
     }
 }
