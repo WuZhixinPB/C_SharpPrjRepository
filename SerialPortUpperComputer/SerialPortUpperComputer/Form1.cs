@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SerialPortUpperComputer
 {
@@ -20,6 +21,7 @@ namespace SerialPortUpperComputer
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            Process.Start("explorer","https://www.baidu.com");
         }
     }
 }
