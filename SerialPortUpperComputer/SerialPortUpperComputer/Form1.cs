@@ -23,6 +23,10 @@ namespace SerialPortUpperComputer
             this.Close();
             Process.Start("explorer","https://www.baidu.com");
             Process.Start("explorer", "https://www.taobao.com");
+
+
+
+
         }
     }
 }
