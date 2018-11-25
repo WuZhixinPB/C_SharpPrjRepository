@@ -34,7 +34,7 @@ namespace 控制台应用程序
                 {
                     Console.WriteLine("erron!");
                 }
-                
+                Console.WriteLine("github 的同步是什么作用我实在是弄不懂");
             }
             Console.ReadLine();
 
