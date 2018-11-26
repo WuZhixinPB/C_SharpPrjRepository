@@ -20,13 +20,9 @@ namespace SerialPortUpperComputer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
             Process.Start("explorer","https://www.baidu.com");
             Process.Start("explorer", "https://www.taobao.com");
-
-
-
-
+            this.Close();
         }
     }
 }
