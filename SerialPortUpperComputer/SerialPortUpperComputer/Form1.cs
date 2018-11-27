@@ -27,7 +27,14 @@ namespace SerialPortUpperComputer
 
         private void Browse_Click(object sender, EventArgs e)
         {
-            
+            OpenFileDialog fileDialog = new OpenFileDialog();
+
+            fileDialog.Multiselect = true;
+            fileDialog.Title = "请选择项目要保存的目录";
+            fileDialog.Filter = "所有文档|*.*";
+
+            fileDialog.ShowDialog();
+
         }
     }
 }
