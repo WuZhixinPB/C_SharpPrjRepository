@@ -28,25 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
+            this.Browse = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Exit
             // 
-            this.button1.Location = new System.Drawing.Point(538, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "退出";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Exit.Location = new System.Drawing.Point(538, 328);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 23);
+            this.Exit.TabIndex = 0;
+            this.Exit.Text = "退出";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // Browse
+            // 
+            this.Browse.Location = new System.Drawing.Point(538, 284);
+            this.Browse.Name = "Browse";
+            this.Browse.Size = new System.Drawing.Size(75, 23);
+            this.Browse.TabIndex = 1;
+            this.Browse.Text = "浏览";
+            this.Browse.UseVisualStyleBackColor = true;
+            this.Browse.Click += new System.EventHandler(this.Browse_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(538, 247);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 397);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Browse);
+            this.Controls.Add(this.Exit);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -55,7 +78,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button Browse;
+        private System.Windows.Forms.Button button3;
     }
 }
 

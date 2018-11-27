@@ -18,11 +18,16 @@ namespace SerialPortUpperComputer
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer","https://www.baidu.com");
+            Process.Start("explorer", "https://www.baidu.com");
             Process.Start("explorer", "https://www.taobao.com");
             this.Close();
+        }
+
+        private void Browse_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
