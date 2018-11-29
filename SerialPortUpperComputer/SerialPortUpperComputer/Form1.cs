@@ -27,14 +27,18 @@ namespace SerialPortUpperComputer
 
         private void Browse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog fileDialog = new OpenFileDialog();
+            FolderBrowserDialog fileDialog = new FolderBrowserDialog();
 
-            fileDialog.Multiselect = true;
-            fileDialog.Title = "请选择项目要保存的目录";
-            fileDialog.Filter = "所有文档|*.*";
+            //fileDialog. = true;
+            //fileDialog.Title = "请选择项目要保存的目录";
+           // fileDialog.Filter = "所有文档|*.*";
+            //fileDialog.InitialDirectory=//设置初始目录
 
-            fileDialog.ShowDialog();
-
+            if(fileDialog.ShowDialog()==DialogResult.OK)
+            {
+                //string file1 = fileDialog.FileName;
+                string file2 = fileDialog.SelectedPath;
+            }
         }
     }
 }
