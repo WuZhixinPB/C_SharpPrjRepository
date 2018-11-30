@@ -27,7 +27,7 @@ namespace SerialPortUpperComputer
 
         private void Browse_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog fileDialog = new FolderBrowserDialog();
+            var fileDialog = new FolderBrowserDialog();
 
             //fileDialog. = true;
             //fileDialog.Title = "请选择项目要保存的目录";
