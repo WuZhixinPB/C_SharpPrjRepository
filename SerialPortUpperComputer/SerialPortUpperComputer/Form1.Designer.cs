@@ -30,7 +30,8 @@
         {
             this.Exit = new System.Windows.Forms.Button();
             this.Browse = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.createPRJ = new System.Windows.Forms.Button();
+            this.textBoxShowSelectedPath = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Exit
@@ -53,26 +54,36 @@
             this.Browse.UseVisualStyleBackColor = true;
             this.Browse.Click += new System.EventHandler(this.Browse_Click);
             // 
-            // button3
+            // createPRJ
             // 
-            this.button3.Location = new System.Drawing.Point(538, 247);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.createPRJ.Location = new System.Drawing.Point(538, 247);
+            this.createPRJ.Name = "createPRJ";
+            this.createPRJ.Size = new System.Drawing.Size(75, 23);
+            this.createPRJ.TabIndex = 2;
+            this.createPRJ.Text = "生成项目";
+            this.createPRJ.UseVisualStyleBackColor = true;
+            this.createPRJ.Click += new System.EventHandler(this.createPRJ_Click);
+            // 
+            // textBoxShowSelectedPath
+            // 
+            this.textBoxShowSelectedPath.Location = new System.Drawing.Point(143, 286);
+            this.textBoxShowSelectedPath.Name = "textBoxShowSelectedPath";
+            this.textBoxShowSelectedPath.Size = new System.Drawing.Size(367, 21);
+            this.textBoxShowSelectedPath.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 397);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBoxShowSelectedPath);
+            this.Controls.Add(this.createPRJ);
             this.Controls.Add(this.Browse);
             this.Controls.Add(this.Exit);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -80,7 +91,8 @@
 
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button Browse;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button createPRJ;
+        private System.Windows.Forms.TextBox textBoxShowSelectedPath;
     }
 }
 
