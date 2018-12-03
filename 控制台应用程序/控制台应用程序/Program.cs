@@ -10,7 +10,12 @@ namespace 控制台应用程序
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world!!");
+            string name;
+
+            name = "wuzhixin";
+            Console.WriteLine($"hello world!!{name}"+name);
+            Console.WriteLine($"my name is {name} it has {name.Length} letters");
+
             Console.ReadLine();
             Console.WriteLine("请输入以下计算的结果,按回车结束");
 
@@ -33,6 +38,7 @@ namespace 控制台应用程序
                 else
                 {
                     Console.WriteLine("erron!");
+                    break;
                 }
                 Console.WriteLine("github 的同步是什么作用我实在是弄不懂");
             }
