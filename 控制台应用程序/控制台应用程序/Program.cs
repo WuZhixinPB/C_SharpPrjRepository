@@ -10,11 +10,28 @@ namespace 控制台应用程序
     {
         static void Main(string[] args)
         {
-            string name;
+            string name,sayHello;
 
             name = "wuzhixin";
+            sayHello = "    hello world   ";
+
             Console.WriteLine($"hello world!!{name}"+name);
             Console.WriteLine($"my name is {name} it has {name.Length} letters");
+            Console.WriteLine(sayHello);
+            Console.WriteLine($"[{sayHello}]");
+            string sayTrimmed = sayHello.TrimStart();
+            Console.WriteLine($"[{sayTrimmed}]");
+            sayTrimmed = sayHello.TrimEnd();
+            Console.WriteLine($"[{sayTrimmed}]");
+            sayTrimmed = sayHello.Trim();
+            Console.WriteLine($"[{sayTrimmed}]");
+            string sayReplaced = sayHello.Replace("wo", "xiahan");
+            Console.WriteLine($"[{sayReplaced}]");
+            sayReplaced = sayHello.ToUpper();
+            Console.WriteLine($"[{sayReplaced}]");
+            Console.WriteLine(sayReplaced);
+            sayReplaced = sayReplaced.ToLower();
+            Console.WriteLine(sayReplaced);
 
             Console.ReadLine();
             Console.WriteLine("请输入以下计算的结果,按回车结束");
