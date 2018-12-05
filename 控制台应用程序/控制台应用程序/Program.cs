@@ -33,6 +33,18 @@ namespace 控制台应用程序
             sayReplaced = sayReplaced.ToLower();
             Console.WriteLine(sayReplaced);
 
+            string iSpeakSomething = "我叫吴智鑫我想学习我爱学习";
+
+            Console.WriteLine(iSpeakSomething.Contains("吴智鑫"));
+            Console.WriteLine(iSpeakSomething.StartsWith("我叫吴智鑫"));
+            Console.WriteLine(iSpeakSomething.EndsWith("我爱学习"));
+
+            double maxNumber = double.MaxValue;
+            double minNumber = double.MinValue;
+            Console.WriteLine($"double 's max value is {maxNumber} min value is {minNumber}");
+
+
+
             Console.ReadLine();
             Console.WriteLine("请输入以下计算的结果,按回车结束");
 
