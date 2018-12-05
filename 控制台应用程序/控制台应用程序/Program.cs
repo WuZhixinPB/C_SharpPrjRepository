@@ -43,7 +43,30 @@ namespace 控制台应用程序
             double minNumber = double.MinValue;
             Console.WriteLine($"double 's max value is {maxNumber} min value is {minNumber}");
 
+            int count = 0;
+            while(count < 100)
+            {
+                Console.Write($"{count} ");
+                count++;
+            }
+            Console.WriteLine();
+            count = 0;
+            do
+            {
+                Console.Write($"{count} ");
+                count++;
+            } while (count < 100);
+            Console.WriteLine();
 
+            int addResult=0;
+            for(int i=1;i<21;i++)
+            {
+                if (i % 3 == 0)
+                {
+                    addResult =addResult+i;
+                }
+            }
+            Console.WriteLine("the sum result is {0}", addResult);
 
             Console.ReadLine();
             Console.WriteLine("请输入以下计算的结果,按回车结束");
